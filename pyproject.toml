@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "ai-generator"
+name = "some-bot"
 version = "0.1.0"
 description = ""
-authors = ["Nikita Gabbasov <copyleft@sosus.org>"]
+authors = ["First Second <any@mail.com>"]
 readme = "README.md"
 packages = [{include = "app"}]
 
@@ -11,6 +11,8 @@ python = "^3.11"
 aiogram = {version = "^3.0.0b6", allow-prereleases = true}
 edgedb = "^1.2.0"
 pydantic = "^1.10.4"
+sentry-sdk = "^1.13.0"
+babel = "^2.11.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.0.225"
@@ -22,7 +24,17 @@ mypy = "^0.991"
 line-length = 79
 src = ["app"]
 select = ["ALL"]
-ignore = []
+ignore = [
+    "D203",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107"
+]
 fix = true
 
 exclude = [
@@ -54,6 +66,9 @@ target-version = "py311"
 
 [tool.ruff.mccabe]
 max-complexity = 10
+
+[tool.black]
+line-length = 79
 
 [build-system]
 requires = ["poetry-core"]
