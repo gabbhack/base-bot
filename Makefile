@@ -135,7 +135,7 @@ text-create-language:
 
 .PHONY: text-init
 text-init:
-	cmd /E:ON /C mkdir ${LOCALES_DIR}
+	mkdir ${LOCALES_DIR}
 	$(MAKE) text-extract
 	$(MAKE) text-create-language language=${LOCALES_DEFAULT}
 
