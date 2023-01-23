@@ -1,6 +1,6 @@
 # some-bot
 ## Copyleft
-
+This template and this README.md are (un)licensed under the terms of [Unlicense](https://unlicense.org/).
 ## Before start
 1. Change project name in `pyproject.toml`, `Makefile` and `README.md` files.
 2. Change default i18n language in `Makefile` file.
