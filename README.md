@@ -1,8 +1,9 @@
 # some-bot
+## Copyleft
+
 ## Before start
-1. Change copyright in `LICENSE.txt`, `pyproject.toml` and `Makefile` files.
-2. Change project name in `pyproject.toml`, `Makefile` and `README.md` files.
-3. Change default i18n language in `Makefile` file.
+1. Change project name in `pyproject.toml`, `Makefile` and `README.md` files.
+2. Change default i18n language in `Makefile` file.
 ## Requirements for dev environment
 1. `Git`
 2. `Makefile`
