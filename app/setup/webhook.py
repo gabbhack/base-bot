@@ -36,3 +36,6 @@ async def on_startup(bot: Bot, dispatcher: Dispatcher) -> None:
         )
         app = setup_app(bot, dispatcher)
         dispatcher["webhook_app"] = app
+    else:
+        logger.info("Deleting webhook")
+        await bot.delete_webhook()
