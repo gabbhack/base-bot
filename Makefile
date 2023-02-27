@@ -97,11 +97,11 @@ docker-build:
 
 .PHONY: docker-up-db
 docker-up-db:
-	docker-compose up -d edgedb redis
+	docker-compose up -d edgedb
 
 .PHONY: docker-stop-db
 docker-stop-db:
-	docker-compose stop edgedb redis
+	docker-compose stop edgedb
 PHONY: docker-up-app
 docker-up-app:
 	docker-compose up --remove-orphans tech-support-bot
