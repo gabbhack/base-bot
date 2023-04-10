@@ -17,7 +17,7 @@ babel = "^2.12.1"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.0.259"
 black = "^23.1.0"
-pre-commit = "^3.2.1"
+pre-commit = "^3.2.2"
 mypy = "^1.1"
 
 [tool.ruff]
