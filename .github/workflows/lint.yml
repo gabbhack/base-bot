@@ -1,0 +1,32 @@
+name: Run linters
+
+on:
+  push:
+    branches:
+      - master
+
+    pull_request:
+      types: [opened, synchronize, reopened, ready_for_review]
+      branches:
+        - master
+
+jobs:
+  build:
+     if: "github.event.pull_request.draft == false && ! contains(toJSON(github.event.commits.*.message), '[skip-ci]')"
+     runs-on: ubuntu
+     steps:
+       - uses: actions/checkout@v3
+       - uses: actions/setup-python@v4
+         with:
+           python-version: 3.11
+           cache: 'poetry'
+
+       - uses: abatilo/actions-poetry@v2
+         with:
+           poetry-version: 1.4.2
+
+       - name: Install deps
+         run: poetry install
+
+       - name: Lint
+         run: make lint
