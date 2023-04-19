@@ -16,14 +16,15 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - uses: actions/checkout@v3
-       - uses: actions/setup-python@v4
-         with:
-           python-version: 3.11
-           cache: 'poetry'
 
        - uses: abatilo/actions-poetry@v2
          with:
            poetry-version: 1.4.2
+
+       - uses: actions/setup-python@v4
+         with:
+           python-version: 3.11
+           cache: 'poetry'
 
        - name: Install deps
          run: poetry install
