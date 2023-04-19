@@ -2,6 +2,6 @@
 
 set -e
 
-edgedb migrate --dsn="${DATABASE_URL}" --tls-security="${EDGEDB_TLS_SECURITY}" || true
+edgedb migrate --quiet --dsn="${DATABASE_URL}" --tls-security="${EDGEDB_TLS_SECURITY}"
 
 python -m app
