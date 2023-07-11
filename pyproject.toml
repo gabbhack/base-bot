@@ -18,7 +18,7 @@ babel = "^2.12.1"
 ruff = "^0.0.277"
 black = "^23.3.0"
 pre-commit = "^3.2.2"
-mypy = "^1.2.0"
+mypy = "^1.4.1"
 
 [tool.ruff]
 line-length = 79
