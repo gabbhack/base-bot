@@ -30,4 +30,4 @@ repos:
     rev: v1.4.1
     hooks:
       - id: mypy
-        additional_dependencies: [pydantic==1.10.4, aiogram==3.0.0b6]
+        additional_dependencies: [pydantic==1.10.11, aiogram==3.0.0b7]
