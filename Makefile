@@ -128,7 +128,7 @@ docker-destroy:
 # =================================================================================================
 .PHONY: text-extract
 text-extract:
-	$(py) pybabel extract . -k "__ _" -o ${LOCALES_DIR}/${LOCALES_DOMAIN}.pot --project=${PROJECT} --version=${VERSION} --copyright-holder=${COPYRIGHT}
+	$(py) pybabel extract . -k "__ _ gettext" -o ${LOCALES_DIR}/${LOCALES_DOMAIN}.pot --project=${PROJECT} --version=${VERSION} --copyright-holder=${COPYRIGHT}
 
 .PHONY: text-create-language
 text-create-language:
