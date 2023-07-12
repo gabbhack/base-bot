@@ -18,6 +18,14 @@ log_handler = logging.StreamHandler(stream=sys.stdout)
 logger.addHandler(log_handler)
 
 
+async def start_polling(bot: Bot, dp: Dispatcher) -> None:
+    await bot.delete_webhook()
+    await dp.start_polling(
+        bot,
+        allowed_updates=dp.resolve_used_update_types(),
+    )
+
+
 def main() -> None:
     if SETTINGS.SENTRY_URL:
         sentry_sdk.init(
@@ -40,12 +48,7 @@ def main() -> None:
         run_app(dp["webhook_app"], port=SETTINGS.PORT)
     else:
         logger.info("Starting polling")
-        asyncio.run(
-            dp.start_polling(
-                bot,
-                allowed_updates=dp.resolve_used_update_types(),
-            ),
-        )
+        asyncio.run(start_polling(bot, dp))
 
 
 if __name__ == "__main__":
