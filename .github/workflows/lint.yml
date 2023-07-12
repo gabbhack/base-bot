@@ -19,7 +19,7 @@ jobs:
 
        - uses: abatilo/actions-poetry@v2
          with:
-           poetry-version: 1.4.2
+           poetry-version: 1.5.1
 
        - uses: actions/setup-python@v4
          with:
