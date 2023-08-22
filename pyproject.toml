@@ -8,7 +8,7 @@ packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-aiogram = {version = "^3.0.0rc1", allow-prereleases = true}
+aiogram = {version = "^3.0.0rc2", allow-prereleases = true}
 edgedb = "^1.6.0"
 pydantic = "^2.1.1"
 sentry-sdk = "^1.29.2"
