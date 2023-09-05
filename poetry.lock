@@ -13,13 +13,13 @@ files = [
 
 [[package]]
 name = "aiogram"
-version = "3.0.0rc2"
+version = "3.0.0"
 description = "Modern and fully asynchronous framework for Telegram Bot API"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "aiogram-3.0.0rc2-py3-none-any.whl", hash = "sha256:9b73ef7911e873b93c012c647043cd737eaef9c79613b05bb7e663b23c388bf3"},
-    {file = "aiogram-3.0.0rc2.tar.gz", hash = "sha256:f95ac42347ae454c00771e6f8540da79cc01cd2a0fb3ff66dd9fe4ebf45cef7f"},
+    {file = "aiogram-3.0.0-py3-none-any.whl", hash = "sha256:d8401062bb472c3e8c4e829cd20ea27598b920c203162b034aa2d03a5c499c0c"},
+    {file = "aiogram-3.0.0.tar.gz", hash = "sha256:22d42993604bae937223dae9fad2945a89e3306ee293c10f5a9bc5ac298c7d24"},
 ]
 
 [package.dependencies]
@@ -28,10 +28,11 @@ aiohttp = ">=3.8.5,<3.9.0"
 certifi = ">=2023.7.22"
 magic-filter = ">=1.0.11,<1.1.0"
 pydantic = ">=2.1.1,<3"
+typing-extensions = ">=4.7.1,<4.8.0"
 
 [package.extras]
 cli = ["aiogram-cli (>=1.0,<2.0)"]
-dev = ["black (>=23.7.0,<23.8.0)", "isort (>=5.11,<6.0)", "mypy (>=1.4.1,<1.5.0)", "packaging (>=23.0,<24.0)", "pre-commit (>=3.3.3,<3.4.0)", "ruff (>=0.0.280,<0.1.0)", "toml (>=0.10.2,<0.11.0)", "towncrier (>=23.6.0,<23.7.0)", "typing-extensions (>=4.7.1,<4.8.0)"]
+dev = ["black (>=23.7.0,<23.8.0)", "isort (>=5.11,<6.0)", "mypy (>=1.4.1,<1.5.0)", "packaging (>=23.0,<24.0)", "pre-commit (>=3.3.3,<3.4.0)", "ruff (>=0.0.280,<0.1.0)", "toml (>=0.10.2,<0.11.0)", "towncrier (>=23.6.0,<23.7.0)"]
 docs = ["furo (>=2023.7.26,<2023.8.0)", "markdown-include (>=0.8.1,<0.9.0)", "pygments (>=2.15.1,<2.16.0)", "pymdown-extensions (>=10.1,<11.0)", "sphinx (>=7.1.1,<7.2.0)", "sphinx-autobuild (>=2021.3.14,<2021.4.0)", "sphinx-copybutton (>=0.5.2,<0.6.0)", "sphinx-intl (>=2.0.1,<2.1.0)", "sphinx-substitution-extensions (>=2022.2.16,<2022.3.0)", "sphinxcontrib-towncrier (>=0.3.2a0,<0.4.0)", "towncrier (>=23.6.0,<23.7.0)"]
 fast = ["uvloop (>=0.17.0)"]
 i18n = ["babel (>=2.12.1,<2.13.0)"]
@@ -1191,4 +1192,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "d0a01964142362aaeb2cef8936a1d71896611b0fe273b0d803bf07693b2a4d1a"
+content-hash = "02dcbdb13ef28544b8b6f7e1115d8ac4fa576ca78021c2485e2d29ce82c12851"
