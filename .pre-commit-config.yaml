@@ -15,18 +15,18 @@ repos:
       - id: "check-json"
 
   - repo: https://github.com/psf/black
-    rev: 23.10.1
+    rev: 23.11.0
     hooks:
       - id: black
         files: &files '^(app)'
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.1.1
+    rev: v0.1.6
     hooks:
       - id: ruff
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.6.1
+    rev: v1.7.0
     hooks:
       - id: mypy
         additional_dependencies: [pydantic==1.10.11, aiogram==3.0.0b7]
