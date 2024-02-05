@@ -11,7 +11,7 @@ python = "^3.11"
 aiogram = {version = "^3.1.1", allow-prereleases = true}
 edgedb = "^1.8.0"
 pydantic = "^2.3.0"
-sentry-sdk = "^1.39.2"
+sentry-sdk = "^1.40.0"
 babel = "^2.14.0"
 
 [tool.poetry.group.dev.dependencies]
