@@ -15,9 +15,9 @@ sentry-sdk = "^1.39.2"
 babel = "^2.14.0"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.1.14"
-black = "^23.12.1"
-pre-commit = "^3.6.0"
+ruff = "^0.2.2"
+black = "^24.2.0"
+pre-commit = "^3.6.2"
 mypy = "^1.8.0"
 
 [tool.ruff]
